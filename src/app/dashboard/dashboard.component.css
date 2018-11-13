@@ -1,0 +1,13 @@
+.background-fill{
+    padding: 10px;
+    background-color: lightgray;
+}
+
+h1{
+    text-align: left;
+}
+
+p{
+    text-align: left;
+    padding: 20px;
+}
