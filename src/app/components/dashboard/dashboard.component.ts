@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
 
   componentName = "dashboard";
   nStatus = false;
@@ -18,9 +18,6 @@ export class DashboardComponent implements OnInit {
     setTimeout(() => {
       this.nStatus = true;
     }, 3000);
-  }
-
-  ngOnInit() {
   }
 
   getStatus(){

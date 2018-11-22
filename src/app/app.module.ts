@@ -4,19 +4,26 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ItemListComponent } from './components/dashboard/item-list/item-list.component';
+import { ItemListServiceService } from './service/item-list-service.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CardFormComponent } from './components/dashboard/card-form/card-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    DashboardComponent
+    DashboardComponent,
+    ItemListComponent,
+    CardFormComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ItemListServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
