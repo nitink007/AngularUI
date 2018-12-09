@@ -1,7 +1,24 @@
-.background-fill{
-    padding: 10px;
-    background-color: lightgray;
+.back{
+    background-color: whitesmoke;
 }
+
+.header-fill{
+    padding: 10px;
+    /* background-color: #4099ff; */
+    background-color: #263544;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.body-content{
+    padding: 10px;
+    /* min-height: 100%;
+    height: auto !important;
+    height: 100%; */
+}
+
+
 
 h1{
     text-align: left;

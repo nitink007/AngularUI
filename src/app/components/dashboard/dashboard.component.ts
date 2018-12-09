@@ -31,4 +31,6 @@ export class DashboardComponent {
   // getInputText(event: Event) {
   //   this.inputText1 = (<HTMLInputElement>event.target).value;
   // }
+
+  
 }

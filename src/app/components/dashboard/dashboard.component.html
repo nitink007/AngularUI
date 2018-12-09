@@ -1,27 +1,65 @@
-<div class="background-fill">
-  <h1>Fidelity | Mercury</h1>
-</div>
-
-<!-- <p>
-  dashboard works and status is: {{ getStatus() }}
-</p>
-<p [innerText]="buttonClickMessage"></p> -->
-
-<!-- <div>
-    <input type="text" name="textField2" id="tf2" [(ngModel)]="inputText1">
-    <label>{{inputText1}}</label>
-    <p>
-    <button type="button" class="btn btn-primary" [disabled]="!nStatus" (click)="onClickButton()">Click me</button>  
-    </p>
-    <app-item-list></app-item-list>    
-</div> -->
-
-<div class="container-fluid">
-
+  <!-- <p>
+    dashboard works and status is: {{ getStatus() }}
+  </p>
+  <p [innerText]="buttonClickMessage"></p> -->
   
+  <!-- <div>
+      <input type="text" name="textField2" id="tf2" [(ngModel)]="inputText1">
+      <label>{{inputText1}}</label>
+      <p>
+      <button type="button" class="btn btn-primary" [disabled]="!nStatus" (click)="onClickButton()">Click me</button>  
+      </p>
+      <app-item-list></app-item-list>    
+  </div> -->
 
-  <app-card-form></app-card-form>  
+
+<div class="back"> 
+
+  <nav class="container-fluid header-fill shadow mb-3">
+    <h1>Fidelity | Mercury</h1>    
+  </nav>
+
+  <div class="card shadow-sm bg-transparent text-info">
+    <div class="card-body">
+      <h4 class="card-text">Dashboard</h4>
+    </div>
+  </div>
+
+  <app-global-search></app-global-search>
+
+  <div class="container-fluid body-content">
+    <!-- <app-card-form></app-card-form>   -->
+
+    <app-menu-tiles></app-menu-tiles>
+
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-header">
+            Activity Log
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            Notifications
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <app-reactive-form1></app-reactive-form1> -->
+    
+  </div>
+
 </div>
+
+
 
 
 
